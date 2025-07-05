@@ -1,3 +1,4 @@
+此教程旨在为零基础的小白提供部署教程 如已安装运行库则请直接跳过前面安装python的教程
 step1 先运行压缩包内的python安装程序（如事先已经安装好请忽略此步）
 (1)双击之后勾选下方的"Add python.exe to PATH"之后选择Install Now
 (2)等待进度条跑完 step2 win+r
