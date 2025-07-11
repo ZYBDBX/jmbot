@@ -5,12 +5,6 @@ from wand.image import Image as WandImage
 from ncatbot.utils import config
 import jmcomic
 
-config.set_bot_uin("")  # 设置 bot qq 号 (必填)
-config.set_root("1340265938")  # 设置 bot 超级管理员账号 (建议填写)
-config.set_webui_uri("http://127.0.0.1:3011")  # 设置 webui 地址 (必填)
-config.set_webui_token("napcat")
-config.set_ws_uri("ws://127.0.0.1:3001")
-config.set_ws_token("")
 bot = BotClient()
 
 @bot.group_event()
