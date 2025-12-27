@@ -7,12 +7,7 @@ import random
 import asyncio
 import os
 
-config.set_bot_uin("2986425499")  # 设置 bot qq 号 (必填)
-config.set_root("1340265938")  # 设置 bot 超级管理员账号 (建议填写)
-config.set_webui_uri("http://127.0.0.1:1111/webui/")  # 设置 webui 地址 (必填)
-config.set_webui_token("CM3Z=1IDdXIb(GV")
-config.set_ws_uri("ws://127.0.0.1:1234")
-config.set_ws_token("napcat2")
+
 bot = BotClient()
 
 
@@ -348,6 +343,7 @@ async def on_group_message(msg: GroupMessage):
         error_detail = traceback.format_exc()
         print(f"详细错误信息:\n{error_detail}")  # 打印到控制台
         await bot.api.post_group_msg(group_id=msg.group_id, text=f"发生未知错误: {str(e)}")
+
 
 
 bot.run()
